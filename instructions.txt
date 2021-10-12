@@ -2,6 +2,10 @@ open git bash
 
 git add .
 
+git status
+
 git commit -m "your message here"
+
+git status
 
 git push -u origin main
