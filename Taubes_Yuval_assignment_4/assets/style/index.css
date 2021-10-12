@@ -1,0 +1,154 @@
+@import url(base.css);
+
+/* -------------------------------------------------------- */
+
+/* ---------------------- HEADER --------------------------- */
+
+/* -------------------------------------------------------- */
+
+header {
+    min-width: 100%;
+    background-color: #6C4B5E;
+    overflow: hidden;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    height: 60px;
+}
+
+.title h1 {
+    font-size: 25px;
+    font-weight: 550;
+    color: white;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    text-align: right;
+    height: 60px;
+    font-size: 100%;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+    cursor: default;
+    margin: 0px 15px 0px 0px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li+li {
+    margin-left: 25px;
+}
+
+.searchbar {
+    height: 42px;
+    width: 400px;
+}
+
+.searchbar form {
+    height: 100%;
+    width: 100%;
+}
+
+.searchbar form input {
+    height: 100%;
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    background: #543B4A url(../img/search\ icon.png) no-repeat 96% center;
+    background-size: 17px 17px;
+    color: white;
+}
+
+.searchbar form input::placeholder {
+    color: #afafaf;
+}
+
+/* -------------------------------------------------------- */
+
+/* ---------------------- BODY --------------------------- */
+
+/* -------------------------------------------------------- */
+
+.contentholder{
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.infoholder {
+    display: flex;
+    height: 100px;
+    background-color: white;
+    width: 33.33%;
+    margin-top: 20px;
+}
+
+.col+.col {
+    margin-left: 25px;
+}
+
+.icon {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.icon ul li {
+    padding: 5px 15px 5px 15px;
+    border-radius: 100px;
+    font-size: 35px;
+    background-color: #6C4B5E;
+    color: white;
+}
+
+.info {
+    height: 100%;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info h2{
+    font-size: 25px;
+    font-weight: 500;
+}
