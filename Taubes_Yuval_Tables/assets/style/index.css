@@ -1,0 +1,112 @@
+@import url(base.css);
+
+/* -------------------------------------------------------- */
+
+/* ---------------------- HEADER --------------------------- */
+
+/* -------------------------------------------------------- */
+
+header {
+    min-width: 100%;
+    background-color: #6C4B5E;
+    overflow: hidden;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    height: 60px;
+}
+
+.title h1 {
+    font-size: 25px;
+    font-weight: 550;
+    color: white;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    text-align: right;
+    height: 60px;
+    font-size: 100%;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+    cursor: default;
+    margin: 0px 15px 0px 0px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li+li {
+    margin-left: 25px;
+}
+
+/* -------------------------------------------------------- */
+
+/* ---------------------- BODY --------------------------- */
+
+/* -------------------------------------------------------- */
+.textholder{
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+}
+.textholder p{
+    font-size: 15px;
+}
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+  }
+th:nth-child(1){
+    width: 5%;
+}
+th:nth-child(2){
+    width: 35%;
+}
+th:nth-child(3){
+    width: 30%;
+}
+th:nth-child(4){
+    width: 20%;
+}
+th:nth-child(5){
+    width: 5%;
+}
+td i{
+    font-size: 20px;
+    color: #6C4B5E;
+}
