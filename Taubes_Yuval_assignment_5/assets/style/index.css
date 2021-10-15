@@ -1,0 +1,191 @@
+@import url(base.css);
+/* -------------------------------------------------------- */
+
+/* ---------------------- HEADER --------------------------- */
+
+/* -------------------------------------------------------- */
+
+header {
+    min-width: 100%;
+    background-color: #05a670;
+    overflow: hidden;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    height: 60px;
+}
+
+.title h1 {
+    font-size: 35px;
+    font-weight: 550;
+    color: white;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    text-align: right;
+    height: 60px;
+    font-size: 100%;
+    margin-right: 150px;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+    cursor: default;
+    margin: 0px 15px 0px 0px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li+li {
+    margin-left: 10px;
+}
+
+.searchbar {
+    height: 42px;
+    width: 300px;
+}
+
+.searchbar form {
+    height: 100%;
+    width: 100%;
+}
+
+.searchbar form input {
+    height: 100%;
+    width: 100%;
+    padding: 7px;
+    border-radius: 25px;
+    background-color: #088d60;
+    background-size: 17px 17px;
+    color: white;
+}
+
+.searchbar form input::placeholder {
+    color: #afafaf;
+}
+
+/* -------------------------------------------------------- */
+
+/* ---------------------- BODY --------------------------- */
+
+/* -------------------------------------------------------- */
+
+.textholder {
+    width: 100%;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    width: 100%;
+}
+
+table tr {
+    box-shadow: 1px 2px #e0e0e0;
+}
+
+table tr:nth-child(1) {
+    box-shadow: none;
+}
+
+table tr td {
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+}
+
+table tr th {
+    text-align: left;
+    padding: 20px 0px 0px 20px;
+    font-weight: 500;
+}
+
+th:nth-child(1) {
+    width: 8%;
+}
+
+th:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3) {
+    width: 15%;
+}
+
+th:nth-child(4) {
+    width: 15%;
+}
+
+th:nth-child(5) {
+    width: 15%;
+}
+
+th:nth-child(5) {
+    width: 17%;
+}
+
+table tr td div {
+    padding: 8px 10px 8px 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.letter1{
+    color: #5aa3c7;
+    background-color: #ddf3ff;
+}
+
+.letter2{
+    color: #bb7d81;
+    background-color: #ffebed;
+}
+
+.letter3{
+    color:#86a371;
+    background-color: #e8f6e9;
+}
+
+.letter4 {
+    color: #868ec0;
+    background-color: #e5e8fa;
+}
+
+.letter5 {
+    color: #bda64c;
+    background-color: #fff2df;
+}
+
+table tr td a {
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    background-color: #dfdfdf;
+}
