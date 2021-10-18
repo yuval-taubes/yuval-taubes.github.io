@@ -189,3 +189,8 @@ table tr td a {
     border-radius: 25px;
     background-color: #dfdfdf;
 }
+table tr td a:hover {
+    background-color: #05a670;
+    color: white;
+    text-decoration: underline;
+}

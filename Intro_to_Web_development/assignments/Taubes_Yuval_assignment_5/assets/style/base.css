@@ -7,8 +7,8 @@
     box-shadow: none;
     box-sizing: border-box;
     vertical-align: baseline;
-    -webkit-transition-duration: 0s;
-    transition-duration: 0s;
+    -webkit-transition: 0s;
+    transition: all .25s ease-in-out;
 }
 
 p, a, li, label, input, textarea, div, span {

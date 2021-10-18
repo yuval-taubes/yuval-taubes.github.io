@@ -134,9 +134,9 @@ nav ul li+li {
 }
 
 .icon ul li {
-    padding: 5px 15px 5px 15px;
+    padding: 8px 15px 8px 15px;
     border-radius: 100px;
-    font-size: 35px;
+    font-size: 25px;
     background-color: #6C4B5E;
     color: white;
 }
