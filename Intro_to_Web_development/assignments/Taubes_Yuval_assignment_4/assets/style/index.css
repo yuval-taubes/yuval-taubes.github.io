@@ -8,7 +8,7 @@
 
 header {
     min-width: 100%;
-    background-color: #6C4B5E;
+    background-color: #05a670;
     overflow: hidden;
 }
 
@@ -81,7 +81,7 @@ nav ul li+li {
     width: 100%;
     padding: 7px;
     border-radius: 6px;
-    background: #543B4A url(../img/search\ icon.png) no-repeat 96% center;
+    background: #088d60 url(../img/search\ icon.png) no-repeat 96% center;
     background-size: 17px 17px;
     color: white;
 }
@@ -133,12 +133,37 @@ nav ul li+li {
     font-size: 0;
 }
 
-.icon ul li {
-    padding: 8px 15px 8px 15px;
+
+.icon ul li a i{
+    padding: 15px;
     border-radius: 100px;
     font-size: 25px;
-    background-color: #6C4B5E;
-    color: white;
+    margin-left: 20px;
+
+}
+.img1{
+    background-color: #c7e1fc;
+    color: #1f62ab;
+}
+.img2{
+    background-color: #ace8a7;
+    color: #199e2d;
+}
+.img3{
+    background-color: #f5bcbc;
+    color: #9e1f1b;
+}
+.img4{
+    background-color: #e8acac;
+    color: #8f1100;
+}
+.img5{
+    background-color: #c3a6e3;
+    color: #621082;
+}
+.img6{
+    background-color: #f2f296;
+    color: #9e9e08;
 }
 
 .info {

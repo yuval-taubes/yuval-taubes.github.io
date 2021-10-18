@@ -43,6 +43,7 @@ nav ul li a {
   letter-spacing: 0.2px;
   text-transform: none;
   cursor: pointer;
+  font-weight: 450;
 }
 nav ul li a:hover {
   text-decoration: underline;
@@ -64,16 +65,17 @@ nav ul li + li {
 .herotext h3 {
   font-size: 25px;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
 }
 button {
-  padding: 15px;
+  padding: 15px 20px 15px 20px;
   background-color: #ff6961;
   color: white;
   font-size: 20px;
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 15px;
   font-weight: 600;
+  font-weight: 400;
 }
 
 .herofooter ul {
@@ -89,8 +91,10 @@ text-align: center;
     color: white;
     font-size: 25px;
 }
-
-div h2{
+.textalign{
+  text-align: center;
+}
+.textalign h2{
   margin: 40px 0px 20px 0px;
   font-size: 35px;
 }
