@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+
+p, a, li, label, input, textarea, div, span{
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0;
+}
+
+.container{
+  position: relative;
+  padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

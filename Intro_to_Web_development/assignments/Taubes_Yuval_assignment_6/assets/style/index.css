@@ -1,0 +1,412 @@
+@import "base.css";
+@import "column.css";
+
+body {
+  background-color: white;
+}
+.wrapper {
+  height: 100vh;
+  background: white url(../img/car-hero.jpg) center center / cover no-repeat
+    fixed;
+  height: calc(100vh);
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+/* ----------------------------------------- */
+/* Header */
+/* ----------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  overflow: hidden;
+}
+.websitetitle {
+  color: white;
+  margin-top: 5px;
+}
+header div {
+  display: flex;
+  justify-content: end;
+}
+
+nav {
+  text-align: right;
+  height: 60px;
+  font-size: 100%;
+}
+nav ul {
+  list-style: none;
+  font-size: 0;
+  margin-top: 2px;
+}
+nav ul li {
+  display: inline;
+  line-height: 60px;
+  cursor: default;
+}
+nav ul li a {
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  cursor: pointer;
+  font-weight: 450;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li + li {
+  margin-left: 25px;
+}
+
+.mobile-nav {
+  overflow: hidden;
+}
+.mobile-nav p i{
+  margin: 20px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* Hero Banner */
+/* ----------------------------------------- */
+
+.herobanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px - 50px);
+}
+
+.herotext {
+  min-width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.herotext h1 {
+  font-size: 70px;
+  color: white;
+}
+.herotext h3 {
+  font-size: 25px;
+  color: white;
+  font-weight: 300;
+}
+button {
+  padding: 15px 20px 15px 20px;
+  background-color: #5c5d67;
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+  margin: 15px;
+  font-weight: 600;
+  font-weight: 400;
+}
+
+.herofooter ul {
+  list-style: none;
+  text-align: center;
+}
+.herofooter ul li {
+  display: inline;
+  margin: 0px 20px 0px 20px;
+}
+
+.herofooter ul li a {
+  color: white;
+  font-size: 23px;
+}
+
+/* ----------------------------------------- */
+/* body */
+/* ----------------------------------------- */
+.textalign {
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textalign h2 {
+  font-size: 35px;
+  color: white;
+}
+.textalign p {
+  margin: 20px 0;
+  color: white;
+}
+
+/* ---------------------------------------- */
+/* form */
+/* ---------------------------------------- */
+
+.form {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.form h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+form {
+  margin-top: 15px;
+  width: 100%;
+  font-size: 0;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  padding: 0 15px;
+  border: 1px solid rgb(131, 131, 131);
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  transition: border-color 0.25s ease-in-out;
+  margin-top: 10px;
+}
+
+form input + input {
+  margin-top: 15px;
+}
+
+input:focus {
+  border: 1.5px solid #61cafd;
+}
+.buttons {
+  text-align: right;
+}
+input[type="submit"] {
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  border-color: #fff;
+  background-color: #5c5d67;
+  border: 1px solid #5c5d67;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid {
+  background: #fff url(../img/Checkmark.jpg) no-repeat 97% center;
+  background-size: 12px 12px;
+}
+
+textarea:valid {
+  background: #fff url(../img/Checkmark.jpg) no-repeat 97% center;
+  background-size: 12px 12px;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: 1px solid rgb(131, 131, 131);
+  background-color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  transition: border-color 0.25s ease-in-out;
+  resize: none;
+  overflow: auto;
+}
+textarea:focus {
+  border: 1.5px solid #61cafd;
+}
+
+/* ----------------------------------------- */
+/* Icons */
+/* ----------------------------------------- */
+.iconholder {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 6px;
+  margin: 30px 0;
+}
+
+.iconholder ul {
+  list-style: none;
+  text-align: center;
+}
+.iconholder ul li {
+  display: inline;
+}
+
+.iconholder ul li a {
+  padding: 10px 15px 10px 15px;
+  background-color: rgba(133, 133, 133, 0.15);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  color: #5c5d67;
+  font-size: 20px;
+  transition: border 0.25s ease-in-out;
+  border-radius: 5rem;
+}
+.iconholder ul li a:hover {
+  border: 0.1rem solid rgb(26, 26, 26);
+  color: black;
+}
+.iconholder ul li + li {
+  margin-left: 25px;
+}
+
+.textholder {
+  margin: 20px;
+  text-align: center;
+}
+.textholder h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.textholder p {
+  margin-top: 20px;
+}
+
+/* ----------------------------------------- */
+/* Footer */
+/* ----------------------------------------- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+footer ul li {
+  display: inline;
+}
+footer ul li a {
+  padding: 20px 30px 20px 0px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+.copyrighttext {
+  margin: 30px 0px 30px 0px;
+  color: black;
+}
+
+/* ----------------------------------------- */
+/* Media Queries */
+/* ----------------------------------------- */
+
+@media screen and (min-width: 320px) {
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .herotext h1 {
+    font-size: 40px;
+  }
+  .herotext h3 {
+    font-size: 20px;
+  }
+
+  .content-img {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 580px) {
+  .container,
+  .row-container {
+    width: 580px;
+  }
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .herotext h1 {
+    font-size: 50px;
+  }
+  .content-img {
+    height: 400px;
+  }
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-sm-12 + .col-sm-12 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container,
+  .row-container {
+    width: 768px;
+  }
+  nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .herotext h1 {
+    font-size: 60px;
+  }
+  .herotext h3 {
+    font-size: 30px;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container,
+  .row-container {
+    width: 1024px;
+  }
+  nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+  .herotext h3 {
+    font-size: 35px;
+  }
+  .herotext h1 {
+    font-size: 70px;
+  }
+  .content-img {
+    height: 300px;
+  }
+}

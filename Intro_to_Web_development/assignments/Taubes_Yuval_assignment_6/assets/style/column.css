@@ -1,0 +1,38 @@
+.row-container{
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+section{
+    padding-top: 50px ;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.col{
+    width: 100%;
+    padding: 10px;
+}
+
+.col-content{
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 20px 48px 0 rgba(59, 69, 152, .1);
+    display: flex;
+    flex-direction: column;
+}
+
+.col-content img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.content-img{
+ height: 200px;
+}
