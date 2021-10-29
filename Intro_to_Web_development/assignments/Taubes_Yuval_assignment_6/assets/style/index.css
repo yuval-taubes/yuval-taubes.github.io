@@ -106,13 +106,16 @@ nav ul li + li {
 }
 button {
   padding: 15px 20px 15px 20px;
-  background-color: #5c5d67;
+  background-color: #95B8D1;
   color: white;
   font-size: 20px;
   border-radius: 25px;
   margin: 15px;
   font-weight: 600;
   font-weight: 400;
+}
+button:hover{
+  background-color: #71A0C1;
 }
 
 .herofooter ul {
@@ -191,7 +194,7 @@ form input + input {
 }
 
 input:focus {
-  border: 1.5px solid #61cafd;
+  border: 1.5px solid #95B8D1;
 }
 .buttons {
   text-align: right;
@@ -201,8 +204,8 @@ input[type="submit"] {
   height: 50px;
   text-align: center;
   border-color: #fff;
-  background-color: #5c5d67;
-  border: 1px solid #5c5d67;
+  background-color: #5397c7;
+  border: 1px solid #5397c7;
   font-weight: 500;
   letter-spacing: 0.2px;
   cursor: pointer;
@@ -238,7 +241,7 @@ textarea {
   overflow: auto;
 }
 textarea:focus {
-  border: 1.5px solid #61cafd;
+  border: 1.5px solid #71A0C1;
 }
 
 /* ----------------------------------------- */
@@ -261,16 +264,16 @@ textarea:focus {
 
 .iconholder ul li a {
   padding: 10px 15px 10px 15px;
-  background-color: rgba(133, 133, 133, 0.15);
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  color: #5c5d67;
-  font-size: 20px;
+  background-color: rgba(113, 140, 175, 0.06);
+  border: 0.1rem solid  #95B8D1;
+  color: #5397c7;
+  font-size: 20px; 
   transition: border 0.25s ease-in-out;
   border-radius: 5rem;
 }
 .iconholder ul li a:hover {
-  border: 0.1rem solid rgb(26, 26, 26);
-  color: black;
+  border: 0.1rem solid #2671a7;
+  color: #2671a7;
 }
 .iconholder ul li + li {
   margin-left: 25px;
@@ -291,7 +294,7 @@ textarea:focus {
 /* ----------------------------------------- */
 /* Footer */
 /* ----------------------------------------- */
-.footer {
+/* .footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -312,7 +315,7 @@ footer ul li a {
 .copyrighttext {
   margin: 30px 0px 30px 0px;
   color: black;
-}
+} */
 
 /* ----------------------------------------- */
 /* Media Queries */
@@ -382,6 +385,9 @@ footer ul li a {
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .col-sm-12 + .col-sm-12 {
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1024px) {
