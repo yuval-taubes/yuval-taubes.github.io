@@ -1,0 +1,252 @@
+@import "base.css";
+@import "colomns.css";
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #71a0c1;
+  background: white url(../img/planet.jpg) center center / cover no-repeat fixed;
+}
+
+/* ----------------------------------------- */
+/* Header */
+/* ----------------------------------------- */
+
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+  min-width: 100%;
+  overflow: hidden;
+}
+.websitetitle {
+  color: white;
+  font-size: 11px;
+  font-weight: 300;
+}
+nav {
+  font-size: 100%;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  font-size: 0;
+  margin-top: 2px;
+}
+nav ul li {
+  display: inline;
+  /* line-height: 60px; */
+  cursor: default;
+}
+nav ul li a {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  cursor: pointer;
+  font-weight: 450;
+}
+
+nav ul li + li {
+  margin-left: 25px;
+}
+
+.mobile-nav {
+  overflow: hidden;
+}
+.mobile-nav p i {
+  margin: 20px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* Hero Banner */
+/* ----------------------------------------- */
+
+.herobanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px - 60px);
+}
+
+.herotext {
+  text-align: center;
+}
+.herotext h2 {
+  color: white;
+  line-height: 90px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.herotext h3 {
+  font-size: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+.herotext button {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  cursor: pointer;
+  background-color: #2f4858;
+  border: 1.5px solid #2f4858;
+  padding: 12px 15px;
+  border-radius: 25px;
+  margin-top: 12px;
+}
+button:hover {
+  background-color: #2b4150;
+  cursor: pointer;
+}
+
+.herofooter ul {
+  list-style: none;
+  text-align: center;
+}
+.herofooter ul li {
+  display: inline;
+  margin: 0px 20px 0px 20px;
+}
+
+.herofooter ul li a {
+  color: white;
+  font-size: 23px;
+}
+
+/* ----------------------------------------- */
+/* Body */
+/* ----------------------------------------- */
+.headingtext {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  height: 100px;
+  margin-top: 50px;
+}
+.headingtext h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+/* ----------------------------------------- */
+/* ccolomns */
+/* ----------------------------------------- */
+.content h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.content p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.content button {
+  padding: 15px 18px;
+  background-color: #2f4858;
+  /* 22031F, 714955 */
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+.content button:hover {
+  background-color: #2b4150;
+  cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* Media queries */
+/* ----------------------------------------- */
+@media screen and (min-width: 320px) {
+  .container,
+  .row-container {
+    width: 100%;
+  }
+  .row-reverse {
+    flex-direction: column-reverse;
+  }
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .herotext h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 580px) {
+  .container,
+  .row-container {
+    width: 100%;
+  }
+  .row-reverse {
+    flex-direction: column-reverse;
+  }
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .herotext h2 {
+    font-size: 65px;
+  }
+  .col-content img {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container,
+  .row-container {
+    width: 768px;
+  }
+  nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .row-reverse {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container,
+  .row-container {
+    width: 1024px;
+  }
+  nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .herotext h2 {
+    font-size: 74px;
+  }
+}

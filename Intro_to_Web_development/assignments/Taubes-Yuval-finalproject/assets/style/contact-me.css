@@ -1,0 +1,340 @@
+@import "base.css";
+@import "colomns.css";
+
+body {
+  background-color: white;
+}
+.col-content {
+  box-shadow: 0 20px 48px 0 rgba(59, 69, 152, 0.1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.col-content-ns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  height: 100%;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+.row {
+  align-items: flex-start;
+}
+/* ----------------------------------------- */
+/* Header */
+/* ----------------------------------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+  min-width: 100%;
+  overflow: hidden;
+}
+.websitetitle {
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+}
+nav {
+  font-size: 100%;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  font-size: 0;
+  margin-top: 2px;
+}
+nav ul li {
+  display: inline;
+  /* line-height: 60px; */
+  cursor: default;
+}
+nav ul li a {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  cursor: pointer;
+  font-weight: 450;
+}
+
+nav ul li + li {
+  margin-left: 25px;
+}
+
+.mobile-nav {
+  overflow: hidden;
+}
+.mobile-nav p i {
+  margin: 20px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* Form */
+/* ----------------------------------------- */
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.form {
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.form h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #2f4858;
+}
+.form p {
+  font-size: 15px;
+  color: #888888;
+  margin-top: 15px;
+}
+
+form {
+  margin-top: 15px;
+  width: 100%;
+  font-size: 0;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  transition: border-color 0.25s ease-in-out;
+  margin-top: 10px;
+}
+
+form input + input {
+  margin-top: 15px;
+}
+
+input:focus {
+  border: 1.5px solid #2f4858;
+}
+.buttons {
+  text-align: right;
+}
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border-color: #ffff;
+  background-color: #2f4858;
+  border: 1px solid #2f4858;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #2f4858;
+  cursor: pointer;
+  color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+input[type="submit"]:hover {
+  background-color: #2b4150;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid {
+  background: #fff url(../img/checkmark-48.png) no-repeat 97% center;
+  background-size: 12px 12px;
+  border: 1px solid #2f4858;
+}
+
+textarea:valid {
+  background: #fff url(../img/checkmark-48.png) no-repeat 97% center;
+  background-size: 12px 12px;
+  border: 1px solid #2f4858;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  transition: border-color 0.25s ease-in-out;
+  resize: none;
+  overflow: auto;
+}
+textarea:focus {
+  border: 1.5px solid #2f4858;
+}
+/* ----------------------------------------- */
+/* Body */
+/* ----------------------------------------- */
+.headerbanner {
+  background: white url(../img/Typewriter.jpg) center center / cover no-repeat
+    fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  z-index: 1;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headertext {
+  text-align: center;
+}
+.headertext h2 {
+  font-size: 45px;
+  color: white;
+}
+
+.contact-info {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  margin: 10px 0 30px 0;
+}
+.contact-info h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #2f4858;
+}
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  margin-top: 32px;
+}
+.email h4,
+.phone-num h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 40px;
+}
+.email i,
+.phone-num i {
+  font-size: 20px;
+}
+.phone-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+.icon-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.icon-holder ul li {
+  display: inline;
+}
+.icon-holder ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+
+  padding: 10px 15px 10px 15px;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  transition: border 0.25s ease-in-out;
+  border-radius: 5rem;
+}
+.icon-holder ul li + li {
+  margin-left: 20px;
+}
+.icon-holder ul li a:hover {
+  color: black;
+  border: 0.1rem solid #2f4858;
+}
+
+/* ----------------------------------------- */
+/* Media queries */
+/* ----------------------------------------- */
+@media screen and (min-width: 320px) {
+  .container,
+  .row-container {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 580px) {
+  .container,
+  .row-container {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container,
+  .row-container {
+    width: 768px;
+  }
+  nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container,
+  .row-container {
+    width: 1024px;
+  }
+  nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
