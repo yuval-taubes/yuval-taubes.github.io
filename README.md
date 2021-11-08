@@ -7,5 +7,7 @@
 
 -[Assignment 6](https://yuval-taubes.github.io/Intro_to_Web_development/assignments/Taubes_Yuval_assignment_6/index.html)
 
--[Final Project](https://yuval-taubes.github.io/Intro_to_Web_development/assignments/Taubes_Yuval_Finalproject)
+-[Final Project](https://yuval-taubes.github.io/Intro_to_Web_development/assignments/Taubes_Yuval_Finalproject/index.html)
+
+
 
