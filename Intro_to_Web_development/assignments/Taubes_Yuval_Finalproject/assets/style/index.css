@@ -93,9 +93,8 @@ nav ul li + li {
   letter-spacing: 1px;
 }
 .herotext h3 {
-  font-size: 20px;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
 }
 .herotext button {
@@ -108,7 +107,7 @@ nav ul li + li {
   cursor: pointer;
   background-color: #2f4858;
   border: 1.5px solid #2f4858;
-  padding: 12px 15px;
+  padding: 12px 17px;
   border-radius: 25px;
   margin-top: 12px;
 }
@@ -130,7 +129,14 @@ button:hover {
   color: white;
   font-size: 23px;
 }
-
+.icon-anim{
+  animation: up-down 2.5s ease-in-out 1;
+}
+@keyframes up-down{
+  0%, 50%, 100% {transform: translateY(0);}
+  25% {transform: translateY(-15px);}
+  75% {transform: translateY(-15px);}
+}
 /* ----------------------------------------- */
 /* Body */
 /* ----------------------------------------- */
@@ -160,7 +166,7 @@ button:hover {
   margin: 20px 0;
 }
 .content button {
-  padding: 15px 18px;
+  padding: 15px 20px;
   background-color: #2f4858;
   /* 22031F, 714955 */
   color: white;
