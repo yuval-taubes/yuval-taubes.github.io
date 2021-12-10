@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Yuval Taubes portfolio" />
+    <meta name="keywords" content="Web developer portfolio Yuval Taubes HTML CSS" lang="en" />
+    <meta name="author" content="Yuval Taubes" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Articles</title>
+
+    <link rel="shortcut icon" href="assets/img/Uppercase_letter_Y.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/style/article.css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <style>
+        .headerbanner {
+            background: white url(assets/img/ssl.jpg) center center / cover no-repeat fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <header>
+                <div class="websitetitle">
+                    <h1>Yuval Taubes</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="about-me.html"> About Me</a></li>
+                        <li><a href="article.html" > Article</a></li>
+                        <li><a href="contact-me.html" class="contact-me"> Contact Me</a></li>
+                    </ul>
+
+                </nav>
+
+                <div class="mobile-nav">
+                    <p><i class="fas fa-bars" title="Menu"></i></p>
+                </div>
+            </header>
+        </div>
+
+        <div class="headerbanner ">
+            <div class="overlay">
+                <div class="container">
+                    <div class="headertext">
+                        <h2>SSL/TLS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text-align">
+                <h2>SSL/TLS</h2>
+                <h4> What is SSL and when was it replaced? </h4>
+                <p> Secure Socket Layer (SSL) is the predecessor to
+                    Transport Layer Security (TLS). SSL was released
+                    in 1995 and was replaced by TLS in 1999.
+                    The most recent version of TLS is RFC 8446,
+                    which was released in August of 2018. The
+                    most common use for SSL/TLS is secure web
+                    browsing. Secure browsing is also known as
+                    Hypertext transfer secure (HTTPS). The easiest
+                    way of telling if a website is using SSL/TLS is
+                    the lock to the left of the URL/search bar.</p>
+                <div class="img-container">
+                    <img src="assets/img/lock-url.jpg">
+                    <p>The Lock determines whether a website is using HTTPS (using SSL/TLS), or HTTP.</p>
+                </div>
+                <div class="img-container">
+                    <img src="assets/img/not-secure-url.jpg">
+                    <p>A website using HTTP instead of HTTPS.</p>
+                </div>
+                <h4> How does SSL/TLS encrypt HTTPS?</h4>
+                <p>TLS creates two keys, one private and one public. The Public key is shared
+                    with the user’s PC and the private key is kept by the website’s server.
+                    The keys are used to encrypt and decrypt data from both the website’s server
+                    and the user’s PC. However, when a user opens a connection a new set of keys
+                    are created, called session keys. Session keys are used to further encrypt
+                    the data between the website’s server and the user’s PC. By using these keys
+                    all data transferred between the connection is seen as a random string of
+                    characters, by hackers </p>
+
+                <h4> What is the difference between HTTP and HTTPS? </h4>
+                <p>HTTP is a protocol that allows 2 computers to communicate over the internet using 2
+                    kinds of messages, requests, and responses. HTTP requests and responses are sent
+                    over the internet using plaintext (unencrypted information). The issue with this
+                    is that hackers can see the plaintext sent over the internet, making HTTP unsecure
+                    . HTTPS uses TLS which means the information that you send and receive is encrypted
+                    (not written in plaintext). </p>
+                <div class="img-container">
+                    <img src="assets/img/https-vs-http.jpg">
+                    <p>HTTP vs HTTPS. Image source: Cloudflare.</p>
+                </div>
+                <h4> Sources </h4>
+                <p>SSL Support Team(2021, September 28). What is SSL? SSL.com. <a href="https://www.ssl.com/faqs/faq-what-is-ssl/">
+                https://www.ssl.com/faqs/faq-what-is-ssl/</a> </p>
+
+                <p>Arampatzis, A. (2020, December 10). What are the differences between HTTP and HTTPS? Venafi. 
+                    <a href="https://www.venafi.com/blog/what-are-differences-between-http-https-0.">https://www.venafi.com/blog/what-are-differences-between-http-https-0.</a></p>
+
+                <p>Why is HTTP not Secure? | HTTP vs HTTPS. Cloudflare. <a href="https://www.cloudflare.com/en-ca/learning/ssl/why-is-http-not-secure/#:~:text=The%20only%20difference%20between%20the,uses%20HTTPS%20has%20https%3A%2F%2F.">https://www.cloudflare.com/en-ca/learning/ssl/why-is-http-not-secure/</a></p>
+                    <p>
+                    Parahar, M. (2020, April 15). Difference between Private Key and Public Key. Tutorialspoint. <a href="https://www.tutorialspoint.com/difference-between-private-key-and-public-key.">https://www.tutorialspoint.com/difference-between-private-key-and-public-key.</a>
+                     </p>
+                
+                     <div class="authors-note">
+                        <p>Author: Yuval Taubes</p>
+                        <p>Date Published: 12/9/2021</p>
+                    </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer container">
+                <ul>
+                    <li><a href="#" target="_blank"> <i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"> <i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"> <i class="fab fa-tiktok"></i></a></li>
+                </ul>
+                <p class="copyrighttext">&copy; 2021 Yuval Taubes</p>
+            </div>
+        </footer>
+
+
+
+        <!-- wrapper div -->
+    </div>
+</body>
+
+</html>
