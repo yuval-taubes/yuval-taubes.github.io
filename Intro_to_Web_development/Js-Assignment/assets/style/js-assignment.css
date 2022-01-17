@@ -1,0 +1,92 @@
+@import "base.css";
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  main                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    .darkMode{
+        background-color: #121212 !important; 
+        color: white;
+        border-color: #e7e7e7;
+    }
+    /* .greyMode{
+        background-color: #;
+    } */
+
+  section h2
+  {
+      font-size: 30px;
+    
+  }
+  section{
+      margin-top: 150px;
+  }
+  .col-2{
+      width: 100%;
+  }
+  .col-2 p{
+      font-size: 24px;
+      font-weight: 550;
+      margin: 15px 0;
+  }
+  #outputF, #outputC{
+      font-size: 20px;
+        font-weight: 500;
+        margin: 15px 0;
+  }
+  .col-2 + .col-2{
+      margin-top: 40px;
+  }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  button*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+button{
+    margin: 200px auto;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+
+}
+button:hover{
+    background-color: #e7e7e7;
+}
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  form                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+form{
+    width: 100%;
+}
+.button { 
+    width: 20%;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 17px;
+    color: #fff;
+    background-color: royalblue;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.button:hover{
+    background-color: blue;
+}
+
+.label{
+  width: 40%;
+  height: 45px;
+  background-color: #f4f5f6;
+  padding: 0 15px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-right: 15px;
+  border: 1px solid;
+}
+.form-flex{
+  display: flex;
+}
