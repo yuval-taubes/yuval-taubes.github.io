@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+}
+
+p, a, li, label, input, textarea, div, span {
+    font-family: 'Oswald', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizeLegibility;
+   letter-spacing: 0;
+}

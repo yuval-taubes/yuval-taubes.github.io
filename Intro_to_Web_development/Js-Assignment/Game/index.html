@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content="Jack McMillan">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <script src="assets/js/index.js" defer></script>
+
+    <title>Pirates Escape</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div id="userShip">
+            <img src="assets/media/user-ship.png">
+        </div>
+        <div class="score-center">
+            <div class="score">
+                <h1>Time Alive:</h1>
+                <span id="score-text">00:00</span>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="game-info">
+                    <h1>Pirate Escape</h1>
+                    <p>When ready select "Start Game" and try to avoide all of the flying cannon balls! Try to surive as
+                        long as possible.</p>
+                </div>
+                <div class="button-center">
+                    <form id="form">
+                        <input type="button" id="start-game" class="start-game" value="Start Game">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="modal-2" class="modal-2">
+            <div class="modal-content">
+                <div class="game-info-2">
+                    <h1>You Lost</h1>
+                    <p>You lost :( you surived for <span id="survive-time"></span>, Good job! Select the button below to
+                        play again.</p>
+                </div>
+                <div class="button-center">
+                    <form id="form">
+                        <input type="button" id="play-again" class="play-again" value="Play-Again">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
