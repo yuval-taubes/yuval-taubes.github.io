@@ -141,6 +141,7 @@ let output = document.getElementById('output')
 let canChange = true;
 let clickOn = false;
 let clickName = document.getElementById('yuvalTaubes')
+let arrow = document.getElementById('arrow')
 
 clickName.addEventListener('click', function(){
 	clickOn = true
@@ -163,6 +164,7 @@ function CountDownTimer(dt, output)
             output.innerText = `Congratulations` 
 			startConfetti();
 			mainDiv.classList.add('visible');
+			arrow.classList.add('visible')
 			wrapper.classList.add('celebration')
         }
         var days = Math.floor(distance / _day);

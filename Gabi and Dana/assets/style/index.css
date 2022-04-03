@@ -42,7 +42,7 @@ canvas{
       color: white;
   }
   .herobanner{
-      height: calc(100vh - 70px - 50px);
+      height: calc(100vh - 70px - 70px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -70,16 +70,17 @@ canvas{
   .row:nth-child(1){
     margin-top: 50px;
   }
-  .col2{
+  .col2, .col1{
     flex: 0 0 100%;
     max-width: 100%;
     text-align: start;
+    margin-top: 20px;
   }
-  .col2 div{
+  .col2 div, .col1 div{
     text-align: start;
     margin-bottom: 10px;
   }
-  .col2 div h3{
+  .col2 div h3, .col1 div h3{
     font-size: 35px;
     font-weight: 400;
     text-decoration: underline;
@@ -87,8 +88,12 @@ canvas{
   .col2 + .col2{
     margin-left: 50px;
   }
-  .col2 p{
+  .col2 p, .col1 p{
     line-height: 30px;
+  }
+  .col1{
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
   @keyframes MoveUpDown {
     0%, 100% {
@@ -103,7 +108,7 @@ canvas{
   }
   .herofooter ul li a{
       font-size: 20px;
-
+    display: none;
       position: absolute;
   }
   .space{
@@ -116,6 +121,9 @@ canvas{
     .container{
       width: 100%;
     }
+    .row{
+      margin-top: 0px;
+    }
     .herobanner h2 {
       font-size: 35px;
     }
@@ -125,10 +133,16 @@ canvas{
     .col2 + .col2{
       margin-left: 0px;
     }
+    .col1{
+      margin-top: 0px;
+    }
   }
   @media screen and (min-width: 380px) {
     .container{
       width: 100%;
+    }
+    .row{
+      margin-top: 0px;
     }
     .herobanner h2 {
       font-size: 35px;
@@ -139,6 +153,9 @@ canvas{
     .col2 + .col2{
       margin-left: 0px;
     }
+    .col1{
+      margin-top: 0px;
+    }
   }
   @media screen and (min-width: 580px) {
     .container{
@@ -146,6 +163,7 @@ canvas{
     }
     .row{
       flex-direction: column;
+      margin-top: 0px;
     }
 
 
@@ -162,6 +180,9 @@ canvas{
     .col2 + .col2{
       margin-left: 0px;
     }
+    .col1{
+      margin-top: 0px;
+    }
   }
   @media screen and (min-width: 700px) {
     .container{
@@ -169,6 +190,7 @@ canvas{
     }
     .row{
       flex-direction: column;
+      margin-top: 0px;
     }
     
     .herobanner h2 {
@@ -184,6 +206,9 @@ canvas{
     .row:nth-last-child(){
       margin-bottom: 0px;
     }
+    .col1{
+      margin-top: 0px;
+    }
   }
   
   @media screen and (min-width: 768px) {
@@ -193,6 +218,9 @@ canvas{
     }
     .row{
       flex-direction: column;
+      margin-top: 0px;
+    }
+    .col1{
       margin-top: 0px;
     }
     .herobanner h2 {
@@ -206,6 +234,7 @@ canvas{
     .col2 + .col2{
       margin-left: 0px;
     }
+    
     
   }
   @media screen and (min-width: 1024px) {
@@ -223,9 +252,12 @@ canvas{
       flex: 0 0 50%;
       max-width: 50%;
       text-align: start;
+      
     }
     .col2 + .col2{
-      margin-left: 25px;
+      margin-left: 50px;
     }
-
+    .col1{
+      margin-top: 30px;
+    }
   }
