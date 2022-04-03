@@ -1,0 +1,263 @@
+@import 'base.css';
+html{
+  overflow-x:hidden
+}
+body{
+  background-color: #F7F8F3;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow-y: overlay;
+}
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: #71a0c1;
+    background: white url(../imgs/IMG_2738.jpg) center center / cover no-repeat fixed;
+  }
+  .celebration{
+    background: white url(../imgs/IMG_2758.jpg) center center / cover no-repeat fixed !important;
+
+  }
+  
+  /* ----------------------------------------- */
+  /* Header */
+  /* ----------------------------------------- */
+  .visible{
+    display: block !important;
+  }
+  #main-div{
+    display: none;
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    height: 100vh;
+    z-index: 2;
+  }
+  .text-center{
+      color: white;
+  }
+  .herobanner{
+      height: calc(100vh - 70px - 70px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .herobanner h2{
+    font-family: 'Parisienne', cursive;
+    font-size: 70px;
+    letter-spacing: 5px;
+  }
+  .herofooter{
+      display: flex;
+      justify-content: center;
+      height: 50px;
+  }
+  .herofooter ul li{
+      color: white;
+      list-style-type: none;
+  }
+  .row{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .row:nth-child(1){
+    margin-top: 50px;
+  }
+  .col2, .col1{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: start;
+    margin-top: 20px;
+  }
+  .col2 div, .col1 div{
+    text-align: start;
+    margin-bottom: 10px;
+  }
+  .col2 div h3, .col1 div h3{
+    font-size: 35px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  .col2 + .col2{
+    margin-left: 50px;
+  }
+  .col2 p, .col1 p{
+    line-height: 30px;
+  }
+  .col1{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 20px;
+    }
+  }
+  .anim{
+    animation: MoveUpDown 1.8s linear infinite;
+  }
+  .herofooter ul li a{
+      font-size: 20px;
+    display: none;
+      position: absolute;
+  }
+  .space{
+      height: 500px;
+  }
+
+
+
+  @media screen and (min-width: 320px) {
+    .container{
+      width: 100%;
+    }
+    .row{
+      margin-top: 0px;
+    }
+    .herobanner h2 {
+      font-size: 35px;
+    }
+    .websitetitle h1{
+      font-size: 18px;
+    }
+    .col2 + .col2{
+      margin-left: 0px;
+    }
+    .col1{
+      margin-top: 0px;
+    }
+  }
+  @media screen and (min-width: 380px) {
+    .container{
+      width: 100%;
+    }
+    .row{
+      margin-top: 0px;
+    }
+    .herobanner h2 {
+      font-size: 35px;
+    }
+    .websitetitle h1{
+      font-size: 20px;
+    }
+    .col2 + .col2{
+      margin-left: 0px;
+    }
+    .col1{
+      margin-top: 0px;
+    }
+  }
+  @media screen and (min-width: 580px) {
+    .container{
+      width: 100%;
+    }
+    .row{
+      flex-direction: column;
+      margin-top: 0px;
+    }
+
+
+    .herobanner h2 {
+      font-size: 65px;
+    }
+    .websitetitle h1{
+      font-size: 30px;
+    }
+    .col2{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .col2 + .col2{
+      margin-left: 0px;
+    }
+    .col1{
+      margin-top: 0px;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .container{
+      width: 100%;
+    }
+    .row{
+      flex-direction: column;
+      margin-top: 0px;
+    }
+    
+    .herobanner h2 {
+      font-size: 65px;
+    }
+    .col2{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .col2 + .col2{
+      margin-left: 0px;
+    }
+    .row:nth-last-child(){
+      margin-bottom: 0px;
+    }
+    .col1{
+      margin-top: 0px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container,
+    .row-container {
+      width: 768px;
+    }
+    .row{
+      flex-direction: column;
+      margin-top: 0px;
+    }
+    .col1{
+      margin-top: 0px;
+    }
+    .herobanner h2 {
+      font-size: 75px;
+    }
+    .col2{
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    .col2 + .col2{
+      margin-left: 0px;
+    }
+    
+    
+  }
+  @media screen and (min-width: 1024px) {
+    .container,
+    .row-container {
+      width: 1024px;
+    }
+    .herobanner h2 {
+      font-size: 74px;
+    }
+    .row{
+      flex-direction: row;
+    }
+    .col2{
+      flex: 0 0 50%;
+      max-width: 50%;
+      text-align: start;
+      
+    }
+    .col2 + .col2{
+      margin-left: 50px;
+    }
+    .col1{
+      margin-top: 30px;
+    }
+  }
