@@ -9,7 +9,7 @@ function showLocation(position) {
 	const { longitude, latitude, accuracy } = position.coords;
 	map.flyTo({
 		center: [longitude, latitude],
-		essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+        essential: true, // this animation is considered essential with respect to prefers-reduced-motion
 	});
 
 
@@ -128,7 +128,8 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
 	container: "map",
 	style: "mapbox://styles/mapbox/streets-v11",
-	center: [-79.4512, 43.6568],
+    center: [-79.4512, 43.6568],
+    interactive: false,
 	zoom: 14,
 });
 
