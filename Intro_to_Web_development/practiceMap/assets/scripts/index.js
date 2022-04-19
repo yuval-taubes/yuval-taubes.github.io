@@ -116,7 +116,7 @@ function errorHandler() {
 }
 
 if (navigator.geolocation) {
-	navigator.geolocation.getCurrentPosition(showLocation, errorHandler, {
+	navigator.geolocation.watchPosition(showLocation, errorHandler, {
 		enableHighAccuracy: true,
 	});
 } else {
@@ -130,8 +130,19 @@ const map = new mapboxgl.Map({
 	style: "mapbox://styles/mapbox/streets-v11",
     center: [-79.4512, 43.6568],
     interactive: false,
-	zoom: 14,
+	zoom: 20,
 });
 
 
 //random bullshit go
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+ 
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
