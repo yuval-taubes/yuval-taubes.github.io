@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+box-shadow: none;
+box-sizing: border-box;
+vertical-align: baseline;
+transition: all .25s ease-in-out;
+font-family: "Poppins", sans-serif;
+}
+
+body, input, textarea {
+
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+letter-spacing: 0;
+}
+
+.map-container, .container {
+position: relative;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexbox-vertical{
+  margin: 0 auto;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Header                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+nav ul li a:hover,
+.active {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+.overlay{
+  min-width: 100%;
+  background-color: black;
+}
+header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+  min-width: 100%;
+  overflow: hidden;
+}
+.websitetitle {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+nav {
+  font-size: 100%;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  font-size: 0;
+  margin-top: 2px;
+}
+nav ul li {
+  display: inline;
+  /* line-height: 60px; */
+  cursor: default;
+}
+nav ul li a {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  cursor: pointer;
+  font-weight: 450;
+}
+
+nav ul li + li {
+  margin-left: 25px;
+}
+
+.mobile-nav {
+  overflow: hidden;
+}
+.mobile-nav p i {
+  margin: 20px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+} */
